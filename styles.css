@@ -76,7 +76,6 @@ header {
 }
 
 .social-media-links {
-  /* position: fixed; */
   position: absolute;
   top: 351px;
   left: 36px;
@@ -119,6 +118,10 @@ header {
   font-weight: bold;
 }
 
+.text-shadow {
+  text-shadow: 1px 1px #111;
+}
+
 .container {
   padding-left: 154px;
   padding-right: 154px;
@@ -138,7 +141,7 @@ header {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .container {
     padding-left: 24px;
     padding-right: 24px;
