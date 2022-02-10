@@ -110,7 +110,7 @@ header {
 }
 
 .font-crete-round {
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
 }
 
 .text-bold {
@@ -157,7 +157,7 @@ header {
   .navbar-logo {
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Roboto, sans-serif;
   }
 
   .header {
@@ -182,7 +182,7 @@ header {
   .header-text {
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins, sans-serif;
     font-weight: 400;
   }
 
