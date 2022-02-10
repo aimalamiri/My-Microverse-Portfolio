@@ -33,6 +33,11 @@ nav {
   margin: 0 12px;
 }
 
+.navbar-link a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
 header {
   height: 870px;
   width: 100%;
@@ -103,4 +108,18 @@ header {
 .container {
   padding-left: 154px;
   padding-right: 154px;
+}
+
+.btn {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-circle:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(180 180 180 / 30%);
+  border-radius: 50%;
 }
