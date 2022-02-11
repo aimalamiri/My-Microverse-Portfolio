@@ -1,7 +1,20 @@
 body,
 h1,
-h2 {
+h2,
+h3,
+h4,
+ul {
   margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: 0;
 }
 
 nav {
@@ -68,17 +81,19 @@ header {
   font-size: 32px;
   font-weight: 500;
   line-height: 44px;
+  width: 566px;
 }
 
 .header-text {
   font-size: 1.3rem;
   line-height: 32px;
+  width: 566px;
 }
 
 .social-media-links {
   position: absolute;
   top: 264px;
-  left: 0;
+  left: 40px;
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -87,6 +102,191 @@ header {
 .header-image {
   width: 100%;
   height: 100%;
+}
+
+.works {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.works-title-section {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.works-title {
+  font-size: 40px;
+  line-height: 52px;
+  height: 83px;
+  margin-top: 120px;
+  margin-bottom: 24px;
+}
+
+.f-project-img {
+  width: 100%;
+  height: 237px;
+}
+
+.project-title {
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: normal;
+}
+
+.project-description {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.project {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 386px;
+  background: #aaa;
+  background-image: url("./assets/png/art\ printing.png");
+  background-position: top left;
+  background-size: cover;
+  padding: 16px;
+}
+
+.about {
+  margin-top: 120px;
+  background: #1c1a19;
+  padding-bottom: 80px;
+}
+
+.about-intro {
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 209px;
+  background-image: url("assets/png/illustration-about-me-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.about-title {
+  height: 79px;
+  font-size: 72px;
+  line-height: 88px;
+  letter-spacing: 0.33px;
+}
+
+.about-separater {
+  border: 1px solid #fff;
+  margin-bottom: 136px;
+}
+
+.technologies {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.tech-title {
+  height: 41.46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.tech-title > h5 {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.tech {
+  font-size: 22px;
+  line-height: 43px;
+  list-style: none;
+  text-align: center;
+  height: 48px;
+}
+
+.tags {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.tag {
+  border: 1px solid #8993a4;
+  padding: 10px;
+  font-size: 15px;
+  font-family: Inter, sans-serif;
+  line-height: 20px;
+  list-style: none;
+}
+
+.dark-tag {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.button {
+  padding: 12px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  background: #ff6b00;
+  color: #fff;
+  border: 1px solid #ff6b00;
+}
+
+.button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.button:active {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid #e05304;
+}
+
+.button-disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #f4f1f0;
+}
+
+.button-disabled:hover {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #f4f1f0;
+  cursor: not-allowed;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.my-24 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.my-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mb-6 {
+  margin-bottom: 6px;
 }
 
 .decoration-none {
@@ -99,6 +299,10 @@ header {
 
 .text-orange {
   color: #f55800;
+}
+
+.text-black {
+  color: #1c1a19;
 }
 
 .text-white-gray {
@@ -128,7 +332,6 @@ header {
 
 .btn {
   padding: 10px;
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -170,13 +373,14 @@ header {
     font-size: 56px;
     font-weight: normal;
     line-height: 63px;
-    width: 270px;
+    width: 327px;
   }
 
   .header-subtitle {
     font-size: 24px;
     line-height: 32px;
     margin-top: 12px;
+    width: 100%;
   }
 
   .header-text {
@@ -184,6 +388,7 @@ header {
     line-height: 24px;
     font-family: Poppins, sans-serif;
     font-weight: 400;
+    width: 100%;
   }
 
   .header-content {
@@ -193,7 +398,6 @@ header {
   .social-media-links {
     position: static;
     flex-direction: row;
-    margin-left: -40px;
     margin-top: 20px;
   }
 }
