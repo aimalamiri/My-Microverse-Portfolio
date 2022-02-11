@@ -222,8 +222,7 @@ header {
 }
 
 .dark-tag {
-  background: #fff;
-  opacity: 0.24;
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .button {
@@ -234,6 +233,7 @@ header {
   line-height: 24px;
   background: #ff6b00;
   color: #fff;
+  border: 1px solid #ff6b00;
 }
 
 .button:hover {
@@ -241,6 +241,25 @@ header {
   background: #fff5e1;
   border: 1px solid #f55800;
   color: #f55800;
+}
+
+.button:active {
+  background: #e05304;
+  color: #f4f1f0;
+  border: 1px solid #e05304;
+}
+
+.button-disabled {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #f4f1f0;
+}
+
+.button-disabled:hover {
+  background: #f4f1f0;
+  color: #5b5957;
+  border: 1px solid #f4f1f0;
+  cursor: not-allowed;
 }
 
 .w-full {
@@ -353,7 +372,7 @@ header {
     font-size: 56px;
     font-weight: normal;
     line-height: 63px;
-    width: 270px;
+    width: 327px;
   }
 
   .header-subtitle {
