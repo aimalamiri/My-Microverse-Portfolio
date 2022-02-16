@@ -302,8 +302,19 @@ header {
   background-color: #fbf8f7;
 }
 
-.contact-form-button {
+.footer-social-media-links {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
+.footer-social-media-links li {
+  list-style: none;
+  width: 40px;
+  height: 40px;
+}
+.footer-social-media-icon img {
+  color: #505f79;
 }
 
 .w-full {
