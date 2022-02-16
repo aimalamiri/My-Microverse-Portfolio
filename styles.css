@@ -29,13 +29,14 @@ nav {
 }
 
 .navbar-logo {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Roboto, sans-serif;
   color: #fff;
 }
 
 .navbar-menu {
-  display: flex;
+  display: none;
 }
 
 .navbar-link {
@@ -52,50 +53,56 @@ nav {
 }
 
 .navbar-menu-button {
-  display: none;
+  display: block;
 }
 
 header {
-  height: 870px;
+  background-size: 256px;
+  height: 660px;
   width: 100%;
   background-color: #1c1a19;
   display: flex;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: bottom right -110px;
   background-image: url("./assets/png/header-illustration.png");
 }
 
 .header-content {
   width: 566px;
-  padding: 122px 0;
+  margin: 122px 0;
+  position: relative;
 }
 
 .header-title {
+  font-size: 56px;
+  font-weight: normal;
+  line-height: 63px;
+  width: 327px;
   position: static;
-  font-size: 72px;
-  line-height: 81px;
-  width: 400px;
 }
 
 .header-subtitle {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 44px;
-  width: 566px;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 12px;
+  width: 100%;
 }
 
 .header-text {
-  font-size: 1.3rem;
-  line-height: 32px;
-  width: 566px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  width: 100%;
 }
 
 .social-media-links {
-  position: absolute;
+  position: static;
+  margin-top: 20px;
   top: 264px;
   left: 40px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   list-style: none;
 }
 
@@ -385,8 +392,7 @@ header {
 }
 
 .container {
-  padding-left: 154px;
-  padding-right: 154px;
+  padding: 0 24px;
 }
 
 .btn {
@@ -402,61 +408,58 @@ header {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (min-width: 820px) {
   .container {
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 0 154px;
   }
 
   .navbar-menu {
-    display: none;
+    display: flex;
   }
 
   .navbar-menu-button {
-    display: block;
+    display: none;
   }
 
   .navbar-logo {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: Roboto, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: Roboto, sanpas-serif;
   }
 
   .header {
-    background-position: bottom right -110px;
-    background-size: 256px;
-    height: 660px;
+    background-position: top right;
+    background-size: auto;
+    height: 870px;
   }
 
   .header-title {
-    font-size: 56px;
-    font-weight: normal;
-    line-height: 63px;
-    width: 327px;
+    font-size: 72px;
+    line-height: 81px;
+    width: 400px;
   }
 
   .header-subtitle {
-    font-size: 24px;
-    line-height: 32px;
-    margin-top: 12px;
-    width: 100%;
+    font-size: 32px;
+    line-height: 44px;
+    margin-top: 0;
+    width: 566px;
   }
 
   .header-text {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    width: 100%;
+    font-size: 1.3rem;
+    line-height: 32px;
+    width: 566px;
   }
 
   .header-content {
-    position: relative;
+    position: static;
+    margin: 192px 0;
   }
 
   .social-media-links {
-    position: static;
-    flex-direction: row;
-    margin-top: 20px;
+    top: 351px;
+    position: absolute;
+    flex-direction: column;
   }
 }
