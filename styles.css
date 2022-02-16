@@ -167,9 +167,10 @@ header {
   width: 100%;
   padding-top: 120px;
   padding-bottom: 209px;
-  background-image: url("assets/png/illustration-about-me-mobile.png");
+  background-image: url("assets/png/illustration-about-me.png");
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-size: 493px 258px;
+  background-position: bottom right -305px;
 }
 
 .about-title {
@@ -483,6 +484,39 @@ header {
 
   .works div:nth-child(n+4) > button {
     display: none;
+  }
+
+  .about {
+    background-color: #262626;
+  }
+
+  .about-intro {
+    background-size: 672px 352px;
+    background-position: center right;
+    padding-bottom: 131.20px;
+  }
+
+  .about-intro > .container {
+    width: calc(566px + 308px);
+  }
+
+  .about-title {
+    font-size: 72px;
+    line-height: 81px;
+    height: 78px;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+
+  .about-intro > .container > p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #f4f4f4 !important;
+    font-size: normal;
+    font-weight: normal;
+  }
+  .about-intro > .container > button {
+    margin-top: 24px;
   }
 }
 
