@@ -216,6 +216,7 @@ header {
 
 .tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: flex-start;
 }
@@ -441,6 +442,10 @@ header {
     width: 648px;
     height: 448px;
     margin-right: 24px;
+  }
+
+  .f-project-body {
+    width: calc(100% - 648px);
   }
 
   .f-project-body > .project-title {
