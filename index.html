@@ -83,25 +83,29 @@
         <h2 class="works-title text-black font-crete-round">
           My Recent Works
         </h2>
-        <hr />
+        <div>
+          <hr />
+        </div>
       </div>
       <div class="featured-project">
         <img class="f-project-img" src="./assets/png/gimfit.png" alt="GYMFIT" />
-        <h3 class="project-title text-black font-crete-round my-24">
-          Multi-Post Stories
-        </h3>
-        <p class="project-description font-inter text-black">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required. has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a standard dummy text.
-        </p>
-        <ul class="tags">
-          <li class="tag">CSS</li>
-          <li class="tag">HTML</li>
-          <li class="tag">Bootstrap</li>
-          <li class="tag">Ruby</li>
-        </ul>
-        <button class="button mt-12">See Project</button>
+        <div class="f-project-body">
+          <h3 class="project-title text-black font-crete-round my-24">
+            Multi-Post Stories
+          </h3>
+          <p class="project-description font-inter text-black">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required. has been the industry's standard dummy text ever
+            since the 1500s, when an unknown printer took a standard dummy text.
+          </p>
+          <ul class="tags">
+            <li class="tag">CSS</li>
+            <li class="tag">HTML</li>
+            <li class="tag">Bootstrap</li>
+            <li class="tag">Ruby</li>
+          </ul>
+          <button class="button mt-12">See Project</button>
+        </div>
       </div>
       <div class="project-card">
         <div class="project">
@@ -233,41 +237,43 @@
       </div>
       <div class="container">
         <hr class="about-separater" />
-        <ul class="technologies">
-          <li class="tech-title font-inter">
-            <img src="assets/svg/languages.svg" alt="Languages icon" />
-            <h5 class="text-white">Languages</h5>
-          </li>
-          <li class="tech text-white font-inter">Javascript</li>
-          <li class="tech text-white font-inter">Ruby</li>
-          <li class="tech text-white font-inter">HTML</li>
-          <li class="tech text-white font-inter">Css</li>
-        </ul>
-        <ul class="technologies font-inter">
-          <li class="tech-title">
-            <img src="assets/svg/frameworks.svg" alt="Frameworks icon" />
-            <h5 class="text-white">Frameworks</h5>
-          </li>
-          <li class="tech text-white font-inter">Bootstrap</li>
-          <li class="tech text-white font-inter">Roby on Rails</li>
-          <li class="tech text-white font-inter">RSPec</li>
-          <li class="tech text-white font-inter">CapyBara</li>
-          <li class="tech text-white font-inter">Selenium</li>
-        </ul>
-        <ul class="technologies font-inter">
-          <li class="tech-title">
-            <img src="assets/svg/skills.svg" alt="Skills icon" />
-            <h5 class="text-white">Skills</h5>
-          </li>
-          <li class="tech text-white font-inter">Codekitt</li>
-          <li class="tech text-white font-inter">Github</li>
-          <li class="tech text-white font-inter">Codepen</li>
-          <li class="tech text-white font-inter">Gitlab</li>
-          <li class="tech text-white font-inter">Terminal</li>
-        </ul>
+        <div class="footer-technologies">
+          <ul class="technologies">
+            <li class="tech-title font-inter">
+              <img src="assets/svg/languages.svg" alt="Languages icon" />
+              <h5 class="text-white">Languages</h5>
+            </li>
+            <li class="tech text-white font-inter">Javascript</li>
+            <li class="tech text-white font-inter">Ruby</li>
+            <li class="tech text-white font-inter">HTML</li>
+            <li class="tech text-white font-inter">Css</li>
+          </ul>
+          <ul class="technologies font-inter">
+            <li class="tech-title">
+              <img src="assets/svg/frameworks.svg" alt="Frameworks icon" />
+              <h5 class="text-white">Frameworks</h5>
+            </li>
+            <li class="tech text-white font-inter">Bootstrap</li>
+            <li class="tech text-white font-inter">Roby on Rails</li>
+            <li class="tech text-white font-inter">RSPec</li>
+            <li class="tech text-white font-inter">CapyBara</li>
+            <li class="tech text-white font-inter">Selenium</li>
+          </ul>
+          <ul class="technologies font-inter">
+            <li class="tech-title">
+              <img src="assets/svg/skills.svg" alt="Skills icon" />
+              <h5 class="text-white">Skills</h5>
+            </li>
+            <li class="tech text-white font-inter">Codekitt</li>
+            <li class="tech text-white font-inter">Github</li>
+            <li class="tech text-white font-inter">Codepen</li>
+            <li class="tech text-white font-inter">Gitlab</li>
+            <li class="tech text-white font-inter">Terminal</li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="contact-form-section">
+    <section class="contact-form-section container">
       <div class="contact-form-title-section">
         <h4 class="contact-form-title font-inter">
           I'm always interested in hearing about new projects, so if you'd
@@ -276,8 +282,8 @@
       </div>
       <form action="https://formspree.io/f/mzborevw" method="post" class="contact-form">
         <input type="text" name="name" class="input-field font-inter" placeholder="Full name" maxlength="30" required />
-        <input type="email" name="email" class="input-field font-inter" placeholder="Email address" required />
-        <textarea name="message" class="input-field input-textarea font-inter" maxlength="500" required>
+        <input type="email" name="email" class="input-field font-inter mt-24" placeholder="Email address" required />
+        <textarea name="message" class="input-field input-textarea font-inter mt-24" maxlength="500" required>
 Enter text here</textarea>
         <button class="button contact-form-button mt-24">Get in touch</button>
       </form>
