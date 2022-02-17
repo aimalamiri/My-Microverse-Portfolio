@@ -421,11 +421,11 @@ header {
     grid-column: 1 / 4;
   }
 
-  .works-title-section div{
+  .works-title-section div {
     width: calc(100% - 339px);
   }
 
-  .works-title{
+  .works-title {
     width: 315px;
     margin-right: 24px;
     height: 52px;
@@ -454,7 +454,7 @@ header {
     margin-top: 0;
     color: #091e42;
   }
-  
+
   .f-project-body > .project-description {
     font-size: 20px;
     line-height: 28px;
@@ -465,17 +465,22 @@ header {
     color: #091e42;
   }
 
-  .f-project-body > button { 
-    margin-top: 24px;   
+  .f-project-body > button {
+    margin-top: 24px;
   }
 
   .project {
     height: 435px;
   }
 
+  .works div:nth-child(n+4) {
+    height: 100%;
+  }
+
   .works div:nth-child(3) .project > div {
     display: none;
   }
+
   .works div:nth-child(3) .project {
     max-height: calc(435px - 58px);
   }
@@ -483,9 +488,9 @@ header {
   .project-card > button {
     height: 58px;
   }
-  
-  .works div:nth-child(n+4) { 
-    height: 100%;
+
+  .about-intro > .container > button {
+    margin-top: 24px;
   }
 
   .works div:nth-child(n+4) > button {
@@ -500,7 +505,7 @@ header {
   .about-intro {
     background-size: 672px 352px;
     background-position: center right;
-    padding-bottom: 131.20px;
+    padding-bottom: 131.2px;
   }
 
   .about-intro > .container {
@@ -519,11 +524,7 @@ header {
     font-size: 20px;
     line-height: 32px;
     color: #f4f4f4 !important;
-    font-size: normal;
     font-weight: normal;
-  }
-  .about-intro > .container > button {
-    margin-top: 24px;
   }
 
   .footer-technologies {
@@ -554,7 +555,7 @@ header {
     padding-top: 130px;
     padding-bottom: 152px;
   }
-  
+
   .contact-form-title-section {
     width: 455px;
     height: 256px;
@@ -641,4 +642,3 @@ header {
 .text-shadow {
   text-shadow: 1px 1px #111;
 }
-
