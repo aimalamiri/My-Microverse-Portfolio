@@ -75,6 +75,16 @@ header {
   font-size: 72px;
   line-height: 81px;
   width: 400px;
+  margin-left: -200px;
+  animation-name: title-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title-animation {
+  100% {
+    margin-left: 0;
+  }
 }
 
 .header-subtitle {
