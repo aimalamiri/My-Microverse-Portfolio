@@ -488,6 +488,7 @@ header {
 
   .about {
     background-color: #262626;
+    padding-bottom: 116px;
   }
 
   .about-intro {
@@ -517,6 +518,27 @@ header {
   }
   .about-intro > .container > button {
     margin-top: 24px;
+  }
+
+  .footer-technologies {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 43px; */
+  }
+
+  .technologies {
+    width: 282px;
+  }
+
+  .tech-title {
+    text-align: left;
+    justify-content: start;
+    margin-bottom: 25px;
+  }
+
+  .tech {
+    text-align: left;
+    margin-bottom: 11px;
   }
 }
 
