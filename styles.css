@@ -79,6 +79,19 @@ header {
   line-height: 63px;
   width: 327px;
   position: static;
+  font-size: 72px;
+  line-height: 81px;
+  width: 400px;
+  margin-left: -200px;
+  animation-name: title-animation;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes title-animation {
+  100% {
+    margin-left: 0;
+  }
 }
 
 .header-subtitle {
@@ -641,4 +654,81 @@ header {
 
 .text-shadow {
   text-shadow: 1px 1px #111;
+}
+
+.container {
+  padding-left: 154px;
+  padding-right: 154px;
+}
+
+.btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-circle:hover {
+  transition: all 0.5s;
+  background-color: #f55800;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu-button {
+    display: block;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Roboto, sans-serif;
+  }
+
+  .header {
+    background-position: bottom right -110px;
+    background-size: 256px;
+    height: 660px;
+  }
+
+  .header-title {
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 63px;
+    width: 327px;
+  }
+
+  .header-subtitle {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 12px;
+    width: 100%;
+  }
+
+  .header-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  .header-content {
+    position: relative;
+  }
+
+  .social-media-links {
+    position: static;
+    flex-direction: row;
+    margin-top: 20px;
+  }
 }
