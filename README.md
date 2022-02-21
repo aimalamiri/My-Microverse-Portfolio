@@ -20,6 +20,10 @@
 - HTML 5
 - CSS 3
 
+## Live Demo 
+
+You can check the live demo [here](https://aimalamiri.github.io/My-Microverse-Portfolio/).
+
 ## Getting Started
 
 **Just clone the project by runing the `git clone git@github.com:aimalamiri/Microverse-Module-2.git` command in your command line, and you are done.**
