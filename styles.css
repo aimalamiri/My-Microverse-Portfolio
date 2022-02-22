@@ -160,11 +160,12 @@ header {
   align-items: flex-end;
   width: 100%;
   height: calc(386px - 50px);
-  background: #aaa;
+  background: #888;
   background-image: url("./assets/png/art\ printing.png");
   background-position: top left;
   background-size: cover;
   padding: 16px;
+  background-blend-mode: darken;
 }
 
 .about {
@@ -250,7 +251,7 @@ header {
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
-  background: #ff6b00;
+  background: #be5001;
   color: #fff;
   border: 1px solid #ff6b00;
 }
