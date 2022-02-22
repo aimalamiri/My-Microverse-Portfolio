@@ -290,10 +290,17 @@
         </h4>
       </div>
       <form action="https://formspree.io/f/mzborevw" method="post" class="contact-form">
-        <input type="text" name="name" class="input-field font-inter" placeholder="Full name" maxlength="30" required />
-        <input type="email" name="email" class="input-field font-inter mt-24" placeholder="Email address" required />
-        <textarea name="message" class="input-field input-textarea font-inter mt-24" maxlength="500" required>
+        <label class="hide-label" for="name">Full Name</label>
+        <input type="text" name="name" class="input-field font-inter" id="name" placeholder="Full name" maxlength="30"
+          required />
+        <label class="hide-label" for="email">Email Address</label>
+        <input type="email" name="email" class="input-field font-inter mt-24" id="email" placeholder="Email address"
+          required />
+        <label class="hide-label" for="message">Your message</label>
+        <textarea name="message" class="input-field input-textarea font-inter mt-24" id="message" maxlength="500"
+          required>
 Enter text here</textarea>
+
         <button class="button contact-form-button mt-24">Get in touch</button>
       </form>
     </section>
