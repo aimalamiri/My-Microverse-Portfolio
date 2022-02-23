@@ -14,7 +14,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aimal Amiri</title>
+  <title>Aimal Amiri's Portfolio</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet" />
@@ -38,7 +38,7 @@
       </li>
       <li class="navbar-link font-inter">
         <a href="#" class="text-white decoration-none">
-          <img src="./assets/svg/mail.svg" alt="mail" class="text-white" />
+          <img src="./assets/svg/mail.svg" alt="Email" class="text-white" />
         </a>
       </li>
     </ul>
@@ -97,7 +97,7 @@
         </div>
       </div>
       <div class="featured-project">
-        <img class="f-project-img" src="./assets/png/gimfit.png" alt="GYMFIT" />
+        <img class="f-project-img" src="./assets/png/gimfit.png" alt="GymFit's homepage" />
         <div class="f-project-body">
           <h3 class="project-title text-black font-crete-round my-24">
             Multi-Post Stories
@@ -249,7 +249,7 @@
         <div class="footer-technologies">
           <ul class="technologies">
             <li class="tech-title font-inter">
-              <img src="assets/svg/languages.svg" alt="Languages icon" />
+              <img src="assets/svg/languages.svg" alt="" />
               <h5 class="text-white">Languages</h5>
             </li>
             <li class="tech text-white font-inter">Javascript</li>
@@ -259,7 +259,7 @@
           </ul>
           <ul class="technologies font-inter">
             <li class="tech-title">
-              <img src="assets/svg/frameworks.svg" alt="Frameworks icon" />
+              <img src="assets/svg/frameworks.svg" alt="" />
               <h5 class="text-white">Frameworks</h5>
             </li>
             <li class="tech text-white font-inter">Bootstrap</li>
@@ -270,7 +270,7 @@
           </ul>
           <ul class="technologies font-inter">
             <li class="tech-title">
-              <img src="assets/svg/skills.svg" alt="Skills icon" />
+              <img src="assets/svg/skills.svg" alt="" />
               <h5 class="text-white">Skills</h5>
             </li>
             <li class="tech text-white font-inter">Codekitt</li>
@@ -290,10 +290,17 @@
         </h4>
       </div>
       <form action="https://formspree.io/f/mzborevw" method="post" class="contact-form">
-        <input type="text" name="name" class="input-field font-inter" placeholder="Full name" maxlength="30" required />
-        <input type="email" name="email" class="input-field font-inter mt-24" placeholder="Email address" required />
-        <textarea name="message" class="input-field input-textarea font-inter mt-24" maxlength="500" required>
+        <label class="hide-label" for="name">Full Name</label>
+        <input type="text" name="name" class="input-field font-inter" id="name" placeholder="Full name" maxlength="30"
+          required />
+        <label class="hide-label" for="email">Email Address</label>
+        <input type="email" name="email" class="input-field font-inter mt-24" id="email" placeholder="Email address"
+          required />
+        <label class="hide-label" for="message">Your message</label>
+        <textarea name="message" class="input-field input-textarea font-inter mt-24" id="message" maxlength="500"
+          required>
 Enter text here</textarea>
+
         <button class="button contact-form-button mt-24">Get in touch</button>
       </form>
     </section>
